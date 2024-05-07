@@ -12,8 +12,6 @@ const App = () => {
         <div>
             <Router>
                 <Navbar />
-                <Header />
-                <fOOTER />
                 <LoadingBar
                     height={3}
                     color='#f11946'
