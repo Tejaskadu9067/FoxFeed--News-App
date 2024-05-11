@@ -8,3 +8,9 @@
 
 5] Screenshots: 
 
+![Fox Feed](https://github.com/Tejaskadu9067/FoxFeed--News-App/assets/142161466/e1359a8c-2cf4-4849-9c7a-74ee656476e8)
+
+![Fox Feed 1](https://github.com/Tejaskadu9067/FoxFeed--News-App/assets/142161466/0b93ff59-d80b-4fd6-b9ca-baf5520ec221)
+
+
+
