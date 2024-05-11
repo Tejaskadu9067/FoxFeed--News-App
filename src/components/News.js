@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
 import PropTypes from 'prop-types'
@@ -37,7 +38,7 @@ const News = (props) => {
 
 
     const fetchMoreData = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${process.env.API_KEY}&page=${page + 1}&pageSize=${props.pageSize}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=e28d5158e1894e8a911102d35f198c88&page=${page + 1}&pageSize=${props.pageSize}`;
         setPage(page + 1)
         let data = await fetch(url);
         let parsedData = await data.json()
@@ -59,9 +60,21 @@ const News = (props) => {
 
                     <div className="row">
                         {articles.map((element) => {
-                            return <div className="col-md-4" key={element.url}>
-                                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
-                            </div>
+
+
+                            return (
+                                <div className="col-md-4" key={element.url}>
+                                    <NewsItem
+                                        title={element.title ? element.title : "title"}
+                                        description={element.description}
+                                        imageUrl={element.urlToImage}
+                                        newsUrl={element.url}
+                                        author={element.author}
+                                        date={element.publishedAt}
+                                        source={element.source.name}
+                                    />
+                                </div>
+                            );
                         })}
                     </div>
                 </div>
