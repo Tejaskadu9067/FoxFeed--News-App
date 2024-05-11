@@ -4,7 +4,7 @@
 
 3] Learnt about the API json structore and then Categorized the News on the basis of their domain. 
 
-4] Link to the application:
+4] Link to the application: https://fox-feed-news.vercel.app/ [...link might not work as the API i used is a free api and it does not allow to productionize an application with it]
 
 5] Screenshots: 
 
